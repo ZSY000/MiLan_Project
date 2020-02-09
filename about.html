@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>米澜婚纱摄影-关于米澜</title>
+	    <!--[if lt IE 9]>
+	        <script src="html5shiv/html5shiv.min.js"></script>
+	        <script src="respond/respond.min.js"></script>
+	    <![endif]-->
+
+	    <!-- 引入 Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- 引入 外部样式 -->
+	    <link href="css/top_banner.css" rel="stylesheet">
+	    <link href="css/about.css" rel="stylesheet">
+		<link href="css/footer.css" rel="stylesheet" type="text/css" />
+		<link href="css/pop-up-gallery1.css" rel="stylesheet" type="text/css" />  <!--图文混排-->
+		<link href="css/pop-up-gallery2.css" rel="stylesheet" type="text/css"/>
+		<link href="css/pop-up-gallery3.css" rel="stylesheet" type="text/css" />
+
+	    <!-- 引入 外部js -->
+		<script src="js/jquery-1.8.2.min.js"></script> <!-- banner -->
+		<script src="js/index.js"></script>
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>	<!-- backtop -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".side ul li").hover(function(){
+					$(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})	
+				},function(){
+					$(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})	
+				});			
+			});
+			function goTop(){
+				$('html,body').animate({'scrollTop':0},600);
+			}
+		</script>
+		
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				list-style-type:none;
+			}
+			.row{
+				margin: 0;
+			}
+			a,a:hover{
+				text-decoration: none;
+			}
+			.nav_border{
+				border-bottom: none;
+			}
+		</style>
+	</head>
+	<body>
+	<!--  top begin  -->
+		<header>
+			<img src="images/logo.png" alt="">	
+			<a href="" class="hidden-xs"><img src="images/phone.png" alt="">手机版</a>	
+			<h4 class="hidden-sm hidden-xs">0755-86238888<br><small>免费服务热线</small></h4>
+			<h3 class="hidden-xs">米澜婚纱摄影<br><small>全国知名婚纱摄影品牌</small></h3>
+		</header>
+	<!--  top end  -->
+
+	<!--  nav begin  -->
+		<nav class="navbar navbar-default navbar-fixed-top">	<!--navbar-fixed-top-->
+			<div class="container-fluid nav_border">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="images/logo1.png" alt="" class="img-responsive logo1">
+			    	<img src="images/slogan1.png" alt="" class="img-responsive slogan1">
+			    	<img src="images/slogan.png" alt="" class="img-responsive slogan">
+				</div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav navbar-right">
+				        <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><br>首 页</a></li>
+				        <li><a href="album.html"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span><br>作品欣赏</a></li>
+				        <li><a href="custom.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span><br>专属定制</a></li>
+				        <li><a href="order.html"><span class="glyphicon glyphicon-time" aria-hidden="true"></span><br>在线预约</a></li>
+				        <li><a href="contact.html"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><br>联系我们</a></li>
+				        <li><a href="about.html" class="home"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>关于米澜</a></li>
+			      	</ul>
+			    </div>
+			</div>
+		</nav>
+	<!--  nav end  -->
+
+	<!--  desc begin  -->
+		<div class="container-fluid desc">
+			<div class="row bread">
+				<div class="col-md-12">
+					<a href="index.html">首页</a> > 关于米澜
+				</div>
+			</div>
+			<div class="row desc_info text-center">
+				<h2><img src="images/title_img1.png" alt="">米澜·关于我们<img src="images/title_img2.png" alt=""></h2>
+				<p>ABOUT MERRY</p>
+				<p class="description">选择米澜婚纱摄影，铭记爱的点滴 | CHOOSE MERRY REMEMBER LOVE</p>
+			</div>
+		</div>
+	<!--  desc end  -->
+
+	<!--  brand_intro begin  -->
+		<div class="container-fluid brand_intro">
+			<img src="images/brand_intro.png" alt="" class="img-responsive">
+		</div>
+	<!--  brand_intro end  -->
+
+	<!--  gallery begin  -->
+		<div class="container-fluid gallery">
+			<h2 class="text-center"><small>——</small> 不一样的米澜 <small>——</small></h2>
+			<h4 class="text-center">DIFFERENT MERRY</h4>
+			<h3 class="text-center"></h3>
+			<div class="row">
+				<div id="fullscreen">
+					<div id="fullscreen-inner">
+						<div id="fullscreen-inner-left" class="fullscreen-inner-button"><span class="icon-caret-left"></span></div>
+						<div id="fullscreen-inner-right" class="fullscreen-inner-button"><span class="icon-caret-right"></span></div>
+						<div id="fullscreen-inner-close" class="fullscreen-inner-button"><span class="icon-close"></span></div>
+						<div id="fullscreen-image"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 wrapper-inner-content">
+					<div class="col-md-4 col-sm-6 col-xs-12 wrapper-inner-content-image">
+						<img src="images/gallery1.jpg" class="img-responsive"/>
+						<img src="images/gallery2.jpg" class="img-responsive"/>
+						<img src="images/gallery3.jpg" class="img-responsive"/>
+						<img src="images/gallery4.jpg" class="img-responsive"/>
+						<img src="images/gallery5.jpg" class="img-responsive"/>
+						<img src="images/gallery6.jpg" class="img-responsive"/>
+						<img src="images/gallery7.jpg" class="img-responsive"/>
+						<img src="images/gallery8.jpg" class="img-responsive"/>   
+						<div class="wrapper-inner-content-image-hover">
+							<div class="wrapper-inner-content-image-hover-cercle">
+								<span class="icon-search"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-6 hidden-xs wrapper-inner-content-text">
+					  	<p>作为国内最大的摄影工作室，米澜的营业面积每年都在不断地扩大着，截止2011年，米澜婚纱摄影的总营业面积已经达到17000平米，可以轻松承受每天拍摄60对新人的庞大拍摄量，大大满足了众多新人的拍摄需求。米澜婚纱摄影目前拥有目前国内各个风格的实景影棚。包括奢华欧式《王的宫殿》主题影棚、韩式《非主题》主题影棚、时尚《Fashion空间》主题影棚、复古欧式《维多利亚公馆》主题影棚等。花海总占地1006亩，是米澜婚纱摄影独家外景拍摄地。在怀柔花海基地能拍到你能想到任何花，包括薰衣草、油菜 花、二月兰、桃花、梨花、杏花、向日葵...如果你喜欢花海，米澜独家花海基地是最理想的选择。
+					  	</p>
+					  	<h5><span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> 店面展示</h5>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 wrapper-inner-content">
+					<div class="col-md-8 col-sm-6 hidden-xs wrapper-inner-content-text">
+					  	<p>选拍摄服装是头等关键的问题。服装分精品区、VIP区和普通区，凡是准新人看中的特别 “惊艳”的服装，服务人员一般都会告诉准新人这些是最新款，只有VIP客户可以穿，如果要穿的话，是要另外交钱的。其实作为婚纱照拍摄，大多数的拍摄套系均为一天的拍摄，由于时间限定为一个工作日，在大多数的摄影行业每天拍摄的服装造型套数是根据套系的高低有着相应的套数限制的，高套系就相应多一些服装造型套数，低套系服装造型套数就相对少一些，这样的话就会给拍照的新人从心理上产生一种束缚感，如果拍满了规定的套数，还有时间、还想在加拍几套，就会产生了后续的消费，这样就会直接影响新人的拍照心情，也增加了不少预算外的费用。
+					  	</p>
+					  	<h5 class="pull-right"> 服装展示 <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span></h5>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 wrapper-inner-content-image">
+						<img src="images/gallery9.jpg" class="img-responsive"/>
+						<img src="images/gallery10.jpg" class="img-responsive"/>
+						<img src="images/gallery11.jpg" class="img-responsive"/>
+						<img src="images/gallery12.jpg" class="img-responsive"/>
+						<img src="images/gallery13.jpg" class="img-responsive"/>
+						<img src="images/gallery14.jpg" class="img-responsive"/>
+						<img src="images/gallery15.jpg" class="img-responsive"/>
+						<img src="images/gallery16.jpg" class="img-responsive"/>      		
+						<div class="wrapper-inner-content-image-hover">
+							<div class="wrapper-inner-content-image-hover-cercle">
+								<span class="icon-search"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/pop-up-gallery1.js"></script>
+	<!--  gallery end  -->
+
+	<!--  adv_img begin  -->
+		<div class="container-fluid adv_img">
+			<a href=""><img src="images/adv3.jpg" alt="" class="img-responsive"></a>
+		</div>
+	<!--  adv_img end  -->
+
+	<!--  team begin  -->
+		<div class="container-fluid team">
+			<h2 class="text-center"><small>——</small> 专业 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 团队 <small>——</small></h2>
+			<h4 class="text-center">PROFESSIONAL TEAM</h4>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h4>化妆团队</h4>
+					<p>21世纪新人喜爱清新自然的韩式裸妆<br>欣赏高贵优雅的偏欧式发型<br>米澜婚纱摄影拥有资深化妆师团队和专业造型师团队<br>为每一位新人量身设计专属造型<br>让美源于生活，更高于生活</p>
+				</div>		
+				<div class="col-md-6 col-sm-6 team_img">
+					<img src="images/team1.png" alt="" class="img-responsive">
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 team_img">
+					<img src="images/team2.png" alt="" class="img-responsive">
+				</div>	
+				<div class="col-md-6 col-sm-6">
+					<h4>摄影团队</h4>
+					<p>学院派精英团队，让瞬间永恒<br>拥有技艺超群的学院派精英摄影团队<br>凭借对时尚敏锐的洞察力与独特的审美能力<br>运用娴熟的专业摄影技术和对潮流前沿的触觉<br>亲手为您打造别具一格的高端时尚婚纱大片。</p>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h4>数码设备</h4>
+					<p>影楼行业标准专业设备<br>每组设备标配不低于佳能5D2级别<br>并配备不少于三种镜头<br>定焦 长焦 广角<br>让我们的摄影师如虎添翼<br>通过不同的视角记录您的美</p>
+				</div>		
+				<div class="col-md-6 col-sm-6 team_img">
+					<img src="images/team3.png" alt="" class="img-responsive">
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 team_img">
+					<img src="images/team4.png" alt="" class="img-responsive">
+				</div>	
+				<div class="col-md-6 col-sm-6">
+					<h4>化妆品</h4>
+					<p>从业多年而且经验丰富的老师<br>拥有精湛的化妆技术<br>精心挑选来自韩国的彩妆<br>及各种品牌的化妆品<br>只为把您的美展现的淋漓尽致<br>为您留下最美好的回忆</p>
+				</div>	
+			</div>
+		</div>
+	<!--  team end  -->
+
+	<!--  promise begin  -->
+		<div class="container-fluid promise">
+			<h2 class="text-center"><small>——</small> 米澜婚纱摄影服务承诺 <small>——</small></h2>
+			<h4 class="text-center">SERVICE PROMISE</h4>
+			<div class="row">
+				<div class="col-md-3 col-sm-3 promise_btn raised hoverable">
+					<div class="anim"></div>
+					<span>拍摄不满免费重拍</span>
+				</div>
+				<div class="col-md-3 col-sm-3 promise_btn raised hoverable">
+					<div class="anim"></div>
+					<span>拍摄中无隐形消费</span> 
+				</div>
+				<div class="col-md-3 col-sm-3 promise_btn raised hoverable">
+					<div class="anim"></div>
+					<span>拍摄风格任您挑选</span> 
+				</div>
+				<div class="col-md-3 col-sm-3 promise_btn raised hoverable">
+					<div class="anim"></div>
+					<span>产品终身维护保养</span> 
+				</div>
+			</div>
+		</div>
+	<!--  promise end  -->
+
+	<!--  continue begin  -->
+		<div class="container-fluid continue">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center">TO BE CONTINUED</h1>
+					<h3 class="text-center">客服热线：0755-86238888</h3>
+				</div>
+			</div>
+		</div>
+	<!--  continue begin  -->
+
+	<!--  footer begin  -->
+		<div class="container-fluid footer">
+			<div class="row info">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="images/logo.png" alt="">
+					<h5>米澜婚纱摄影<br><span>MERRY WEDDING PHOTOGRAPHY</span></h5>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 weibo">
+					<img src="images/weibo.png" alt="" class="img-responsive">
+					<p>米澜官方微信<br><span>MERRY @ WEIXIN</span><br><small>微信号：merry1314</small></p>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 weixin">
+					<img src="images/weixin.png" alt="" class="img-responsive">
+					<p>米澜官方微博<br><span>MERRY @ WEIBO</span><br><small>微博名：米澜婚纱摄影</small></p>
+				</div>
+			</div>
+			<div class="row map">
+				<img src="images/map.png" alt="" class="img-responsive">
+			</div>
+			<div class="row copyright text-center">Copyright © 2018. <img src="images/pic.gif" alt=""> All Rights Reserved.
+				<br><span>Designed by Solin Studio</span>
+			</div>
+		</div>
+	<!--  footer end  -->
+
+	<!--  backtop begin  -->
+		<div class="side">
+			<ul>
+				<li><a href="#"><div class="sidebox"><img src="images/side_icon01.png">客服中心</div></a></li>
+				<li><a href="javascript:void(0);" ><div class="sidebox"><img src="images/side_icon02.png">QQ客服</div></a></li>
+				<li><a href="javascript:void(0);" ><div class="sidebox"><img src="images/side_icon03.png">新浪微博</div></a></li>
+				<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="images/side_icon04.png"></a></li>
+			</ul>
+		</div>
+	<!--  backtop end  -->
+	
+		<!-- 内置js -->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
+	</body>
+</html>
