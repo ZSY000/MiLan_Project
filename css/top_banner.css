@@ -1,0 +1,97 @@
+/*----------header----------*/
+header{
+	height: 100px;
+	background-color: #333;
+}
+header>img{
+	float: left;
+	margin: 16px 0 0 80px;
+}
+header h3{
+	float: right;
+	color: #eee;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 20px;
+	border-right: 1px solid #aaa;
+}
+header h4{
+	color: #eee;
+	float: right;
+	font-size: 24px;
+	margin: 20px 40px 0 20px;
+	line-height: 30px;
+}
+header h4 small{font-size: 16px;}
+header a{
+	display: block;
+	float: right;
+	margin: 20px 40px 0 10px;
+	color: #eee;
+}
+header a:hover{
+	color: #eee;
+	text-decoration: none;
+}
+
+/*----------nav----------*/
+.navbar-header{height: 90px;}
+.fixed-header-on .navbar-fixed-top{top:-30px;}
+.fixed-header-on .navbar-default{
+	transition: all 0.5s;
+	background-color: rgba(51,51,51,1);
+	border-top: 3px solid #FF6666;
+}
+.fixed-header-on .navbar-default .navbar-nav>li>.home{color: #FF6666;}
+.fixed-header-on .navbar-default .navbar-nav>li>a{color: #eee;}
+.navbar{
+	margin-top: 30px;
+	margin-bottom: 0px;
+	height: 70px;
+}
+.navbar-default{
+	background-color: #fff;
+	border: none;
+}
+.navbar-collapse{height: 70px;}
+.navbar-default .navbar-nav>li>.home{color: #FF6666;}
+.navbar-default .navbar-nav>li:hover>.home{color: #D83E3E;}
+.navbar-default .navbar-nav>li>a{
+	height: 60px;
+	transition: all 0.3s;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.navbar-default .navbar-nav>li:hover>a{line-height: 24px;}
+.navbar-default .navbar-nav>li>a:hover{color: #666;}
+.nav_border{
+	height: 70px;
+	border-bottom: 3px solid #FF6666;
+}	
+.navbar-header .slogan,.navbar-header .logo{
+	display: block;
+	float: left;
+}
+.navbar-header .slogan{margin-left: 0px;}
+.fixed-header-on .slogan,.fixed-header-on .logo{display: none;}
+.navbar-header .slogan1,.navbar-header .logo1{display: none;}
+.fixed-header-on .slogan1,.fixed-header-on .logo1{
+	display: block;
+	float: left;
+}
+.fixed-header-on .slogan1{margin-top: 12px;}
+.fixed-header-on .nav_border{border-bottom:none;}
+
+/*----------banner----------*/
+#demoSlider{margin-top: 70px;}
+#banner1,#banner2,#banner3,#banner4,#banner5{width: 100% !important;}
+
+/*----------desc----------*/
+.desc{padding-top: 90px;}
+.desc .desc_info .description{
+	font-size: 20px;
+	color: #AFAF71;
+	font-family: 'Edwardian Script ITC';
+}
+.desc .desc_info h2{color: #831717;}
+.desc .desc_info p:nth-child(2){color: #aaa;}

@@ -1,0 +1,213 @@
+/*----------self_info----------*/
+.self_info{
+	padding: 20px 0;
+	border-bottom: 1px solid #ddd;
+}
+.self_info .left_inrto{border-right: 1px solid #eee;}
+.self_info .left_inrto p{
+	color: #f66;
+	font-size: 20px;
+	line-height: 30px;
+}
+.self_info form label{color: #666;}
+.self_info form label span:last-child{color: #f33;}
+
+/*----------servey----------*/
+@keyframes hover-color {
+	from{border-color: #c0c0c0;}
+	to{border-color: #3e97eb;}
+}
+.magic-radio,
+.magic-checkbox{
+	position: absolute;
+	display: none;
+}
+.magic-radio[disabled],
+.magic-checkbox[disabled]{cursor: not-allowed;}
+.magic-radio + label,
+.magic-checkbox + label{
+	position: relative;
+	display: block;
+	padding-left: 30px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.magic-radio + label:hover:before,
+.magic-checkbox + label:hover:before{
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: hover-color;
+}
+.magic-radio + label:before,
+.magic-checkbox + label:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 1px solid #c0c0c0;
+}
+.magic-radio + label:after,
+.magic-checkbox + label:after{
+    position: absolute;
+    display: none;
+    content: '';
+}
+.magic-radio[disabled] + label,
+.magic-checkbox[disabled] + label{
+	cursor: not-allowed;
+	color: #e4e4e4;
+}
+.magic-radio[disabled] + label:hover, .magic-radio[disabled] + label:before, .magic-radio[disabled] + label:after,
+.magic-checkbox[disabled] + label:hover,
+.magic-checkbox[disabled] + label:before,
+.magic-checkbox[disabled] + label:after{
+    cursor: not-allowed;
+}
+.magic-radio[disabled] + label:hover:before,
+.magic-checkbox[disabled] + label:hover:before{
+    border: 1px solid #e4e4e4;
+    animation-name: none;
+}
+.magic-radio[disabled] + label:before,
+.magic-checkbox[disabled] + label:before{
+    border-color: #e4e4e4;
+}
+
+.magic-radio:checked + label:before,
+.magic-checkbox:checked + label:before{
+	animation-name: none;
+}
+
+.magic-radio:checked + label:after,
+.magic-checkbox:checked + label:after{
+  display: block;
+}
+.magic-radio + label:before{border-radius: 50%;}
+.magic-radio + label:after{
+	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #3e97eb;
+}
+.magic-radio:checked + label:before{border: 1px solid #3e97eb;}
+.magic-radio:checked[disabled] + label:before{border: 1px solid #c9e2f9;}
+.magic-radio:checked[disabled] + label:after{background: #c9e2f9;}
+.magic-checkbox + label:before{border-radius: 3px;}
+.magic-checkbox + label:after{
+	top: 2px;
+	left: 7px;
+	box-sizing: border-box;
+	width: 6px;
+	height: 12px;
+	transform: rotate(45deg);
+	border-width: 2px;
+	border-style: solid;
+	border-color: #fff;
+	border-top: 0;
+	border-left: 0;
+}
+.magic-checkbox:checked + label:before{
+	border: #3e97eb;
+	background: #3e97eb;
+}
+.magic-checkbox:checked[disabled] + label:before{
+	border: #c9e2f9;
+	background: #c9e2f9;
+}
+.servey{
+	border:1px solid #ddd;
+	margin: 100px 50px;
+	border-radius: 10px;
+}
+.servey .ques{
+	padding: 20px 0;
+	color: #555;
+	border-bottom: 1px solid #ddd;
+}
+.servey .q1{
+	font-size: 20px;
+	color: #f66;
+	line-height: 48px;
+	font-weight: bold;
+}
+.servey label{
+	font-size: 16px;
+	line-height: 22px;
+	margin: 10px 0 10px 5px;
+	font-weight: normal;
+}
+.servey .ques .style img{
+	margin: 10px 0 8px;
+	padding: 5px;
+	border:1px solid #eee;
+}
+.servey h3{
+	width: 17%;
+	color: #444;
+	background-color: #fff;
+	margin-top: -27px;
+	margin-left: 10px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.servey h3 span{font-size: 14px;}
+.servey>p{color: #555;}
+.btn{     				/*提交按钮*/
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	line-height: 35px;
+	text-align: center;
+	max-width: 160px;
+	position: relative;
+	margin: 30px auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+.btn:hover{text-decoration: none;}
+.Vbtn-1{
+	height: 45px;
+	background-color: #3E97EB;
+	text-align: center;
+}
+.Vbtn-1 svg{
+	height: 45px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.Vbtn-1 rect{
+	fill: none;
+	stroke: #3E97EB;
+	stroke-width: 3;
+	stroke-dasharray: 422, 0;
+	transition: all 450ms linear 0s;
+}
+.Vbtn-1:hover{
+	background: rgba(225, 51, 45, 0);
+	font-weight: 900;
+	letter-spacing: 1px;
+	transition: all 150ms linear 0s;
+}
+.Vbtn-1:hover rect{
+	stroke-width: 5;
+	stroke-dasharray: 15, 310;
+	stroke-dashoffset: 48;
+	-webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*----------custom_adv----------*/
+.custom_adv1,.custom_adv2{margin-bottom: 20px;}
+.custom_adv2 img{
+	float: left;
+	width: 50%;
+}

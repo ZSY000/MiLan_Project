@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>米澜婚纱摄影</title>
+	    <!--[if lt IE 9]>
+	        <script src="html5shiv/html5shiv.min.js"></script>
+	        <script src="respond/respond.min.js"></script>
+	    <![endif]-->
+
+	    <!-- 引入 Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- 引入 外部样式 -->
+	    <link href="css/top_banner.css" rel="stylesheet">
+	    <link href="css/intro_theme_news.css" rel="stylesheet">
+	    <link href="css/photos.css" rel="stylesheet">
+	    <link href="css/contact.css" rel="stylesheet">		<!-- btn1 -->
+	    <link href="css/jquery.sliderTabs.css" type="text/css" rel="stylesheet" />
+		<link href="css/timeline_guide.css" rel="stylesheet" type="text/css" />
+		<link href="css/footer.css" rel="stylesheet" type="text/css" />
+
+	    <!-- 引入 外部js -->
+		<script src="js/jquery-1.8.2.min.js"></script> <!-- banner -->
+		<script src="js/index.js"></script>
+		<script src="js/jquery.js"></script>	<!-- news -->
+		<!-- banner -->
+	    <script>	
+			$(function(){
+				var demo = $("div#demoSlider").sliderTabs({
+				  indicators: true,
+				  panelArrows: true,
+				  panelArrowsShowOnHover: true,
+				  tabs: false,
+				  classes: {
+					panel: 'demoPanel'
+				  }
+				});
+			});
+		</script>
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>	<!-- backtop -->
+		<!-- backtop -->
+		<script type="text/javascript">	
+			$(document).ready(function(){
+				$(".side ul li").hover(function(){
+					$(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})	
+				},function(){
+					$(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})	
+				});			
+			});
+			function goTop(){
+				$('html,body').animate({'scrollTop':0},600);
+			}
+		</script>
+
+		<style>
+			* {
+				margin:0;
+				padding:0;
+				list-style-type:none;
+			}
+			body{
+				--def: #FAFA79; 	
+				--inv: #fff;
+			}
+			.bg-show{
+				background: url(images/bg_img.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+			.bg-show1{
+				background: url(images/bg_img1.jpg);
+				background-position: center center;
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+			.demoPanel{
+				padding:0;
+				background-color: #222;
+				text-align:center;
+			}
+			.demoPanel img{width:100%;}
+			.row{margin: 0;}
+			.navbar-collapse .slogan{margin-left: -9px;}
+		</style>
+	</head>
+	<body>
+	<!--  top begin   -->
+		<header>
+			<img src="images/logo.png" alt="">	
+			<a href="" class="hidden-xs"><img src="images/phone.png" alt="">手机版</a>	
+			<h4 class="hidden-sm hidden-xs">0777-86238888<br><small>免费服务热线</small></h4>
+			<h3 class="hidden-xs">米澜婚纱摄影<br><small>全国知名婚纱摄影品牌</small></h3>
+		</header>
+	<!--  top end  -->
+
+	<!--  nav begin  -->
+		<nav class="navbar navbar-default navbar-fixed-top">	<!--navbar-fixed-top-->
+			<div class="container-fluid nav_border">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="images/logo1.png" alt="" class="img-responsive logo1">
+			    	<img src="images/slogan1.png" alt="" class="img-responsive slogan1">
+			    	<img src="images/slogan.png" alt="" class="img-responsive slogan">
+				</div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav navbar-right">
+				        <li><a href="index.html" class="home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><br>首 页</a></li>
+				        <li><a href="album.html"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span><br>作品欣赏</a></li>
+				        <li><a href="custom.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span><br>专属定制</a></li>
+				        <li><a href="order.html"><span class="glyphicon glyphicon-time" aria-hidden="true"></span><br>在线预约</a></li>
+				        <li><a href="contact.html"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><br>联系我们</a></li>
+				        <li><a href="about.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>关于米澜</a></li>
+			      	</ul>
+			    </div>
+			</div>
+		</nav>
+	<!--  nav end  -->
+	
+	<!--  banner begin  -->
+		<div id="demoSlider">
+		    <ul>
+				<li><a href="#banner1"></a></li>
+				<li><a href="#banner2"></a></li>
+				<li><a href="#banner3"></a></li>
+				<li><a href="#banner4"></a></li>
+				<li><a href="#banner5"></a></li>
+		    </ul>
+		    <div id="banner1" style="width: 100%;"><img src="images/banner1.jpg" class="img-responsive"></div>
+		    <div id="banner2" style="width: 100%;"><img src="images/banner2.jpg" class="img-responsive"></div>
+		    <div id="banner3" style="width: 100%;"><img src="images/banner3.jpg" class="img-responsive"></div>
+		    <div id="banner4" style="width: 100%;"><img src="images/banner4.jpg" class="img-responsive"></div>
+		    <div id="banner5" style="width: 100%;"><img src="images/banner5.jpg" class="img-responsive"></div>
+		</div>
+	<!--  banner end  -->
+	
+	<!--  intro begin  -->
+		<div class="container-fluid intro">
+			<div class="row">
+				<h2 class="text-center intro-h2">米澜，给你不一样的美<br><small>HELLO MERRY</small></h2>
+				<p class="text-center intro-p">20年高品质品牌影响力，众多明星首选品牌，米澜婚纱摄影，始终为品质而不断前行！</p>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+							<div class="col-xs-7 text-right intro-info1">
+								<p>国内外20余家分店，让您随心所“域”<br>千人资深技术团队高品质服务<br>提供完善的一站式服务体验<br>拍摄环节无任何隐性消费<br>尽享无忧拍摄</p>
+							</div>
+							<div class="col-xs-5 intro-img1">
+								<img src="images/intro-img1.jpg" alt="" class="img-responsive">
+							</div>						
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-right">
+							<div class="col-xs-5 intro-img2">
+								<img src="images/intro-img2.jpg" alt=""  class="img-responsive">
+							</div>
+							<div class="col-xs-7 intro-info2">
+								<p>取景地包含亚洲多城市顶级海景任您挑选<br>国内30000平米独家实景影棚<br>恒温暖棚尽享舒适贴心<br>米澜自营精品客栈<br>让婚纱照无约束</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--  intro end  -->
+
+	<!--  theme begin  -->
+		<div class="container-fluid theme">
+			<div class="row">
+				<div class="col-md-3 col-sm-12 col-xs-12 text-center theme_title">
+					<h3>精品 <img src="images/diamond.png" alt=""> 主题<br><small>MERRY THEME</small></h3>
+					<div class="btn1"> 
+						<span class="line1"></span> 
+						<span class="line2"></span> 
+						<span class="line3"></span> 
+						<span class="line4"></span> 查看更多 
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 theme_classify text-center">
+					<a href="">
+						<div>
+							<div>
+								<span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>
+								<p>森系女孩<br><small>MORI GIRL</small></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 theme_classify text-center">
+					<a href="">
+						<div>
+							<div>
+								<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+								<p>全球旅拍<br><small>GLOBAL TRAVEL</small></p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 theme_classify text-center">
+					<a href="">
+						<div>
+							<div>
+								<span class="glyphicon glyphicon-queen" aria-hidden="true"></span>
+								<p>天空之城<br><small>SKY CASTLE</small></p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	<!--  theme end  -->
+
+	<!--  news begin  -->
+		<div class="container-fluid news">
+			<h2 class="text-center"><small>——</small> 活动 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 系列 <small>——</small></h2>
+			<h4 class="text-center">ACTIVITY SERIES</h4>
+			<div class="row film_focus">
+				<div class="film_focus_desc col-md-4 hidden-sm hidden-xs">
+					<ul class="film_focus_nav">
+						<li class="cur"> <b><img src="images/news1.jpg" alt="" class="img-responsive"/></b><span>名流国际系列</span> </li>
+						<li> <b><img src="images/news2.jpg" alt="" class="img-responsive"/></b><span>经典尊荣系列</span> </li>
+						<li> <b><img src="images/news3.jpg" alt="" class="img-responsive"/></b><span>法式轻奢系列</span> </li>
+						<li> <b><img src="images/news4.jpg" alt="" class="img-responsive"/></b><span>精致公主系列</span> </li>
+					</ul>
+				</div>
+				<div class="film_focus_imgs_wrap col-md-8 col-md-offset-4 col-xs-12 col-sm-12">
+					<ul class="film_focus_imgs">
+						<li><a href="#"><img src="images/news1.jpg" alt="CELEBRITY INTERNATIONAL SERIES" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/news2.jpg" alt="CLASSIC HONOR SERIES" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/news3.jpg" alt="FRENCH STYLE SERIES" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/news4.jpg" alt="DELICATE PRINCESS SERIES" class="img-responsive"/></a></li>
+					</ul>
+					<h3 class="text-center">CELEBRITY INTERNATIONAL SERIES</h3>
+				</div>
+			</div>
+		</div>	
+	<!--  news end  -->
+
+	<!--  photos begin  -->
+		<div class="container-fluid photos">
+			<h2 class="text-center"><small>——</small> 客片 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 欣赏 <small>——</small></h2>
+			<h4 class="text-center">PHOTO APPRECIATION</h4>
+			<div class="row">			<!--外景系列-->
+				<h3>外景系列</h3>
+				<div class="col-md-10 col-md-offset-1">
+			        <ul class="items row">
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo1.png" alt="">
+			                    <figcaption>
+			                        <h2>恋恋夏日风<br><span>SOFT WIND</span></h2>
+			                        <p>情人湖</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo2.png" alt="">
+			                    <figcaption>
+			                        <h2>温·心<br><span>WARM HEART</span></h2>
+			                        <p>海角七号</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo3.png" alt="">
+			                    <figcaption>
+			                        <h2>尊荣尚爱<br><span>HONOR LOVE</span></h2>
+			                        <p>天津之眼</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo4.png" alt="">
+			                    <figcaption>
+			                        <h2>大城小爱<br><span>LOVE IN CITY</span></h2>
+			                        <p>重庆古城</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			        </ul>
+			    </div>
+			    <div class="col-md-1">
+			    	<div class="btn4"> 
+						<svg height="45" width="100" xmlns="#">
+							<rect id="btn4" height="45" width="100"></rect>
+						</svg>
+						<div id="btn4_text"> <a href="">查看更多</a> </div>
+					</div>
+			    </div>
+	        </div>
+	        <div class="row">			<!--室内系列-->
+				<h3>室内系列</h3>
+				<div class="col-md-10 col-md-offset-1">
+			        <ul class="items row">
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo5.png" alt="">
+			                    <figcaption>
+			                        <h2>吾爱如歌<br><span>LOVE SONG</span></h2>
+			                        <p>2018.03.26</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo6.png" alt="">
+			                    <figcaption>
+			                        <h2>一宠繁华<br><span>THE ONLY</span></h2>
+			                        <p>2018.03.16</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo7.jpg" alt="">
+			                    <figcaption>
+			                        <h2>一笑倾城<br><span>YOU SMILE</span></h2>
+			                        <p>2018.04.22</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo8.png" alt="">
+			                    <figcaption>
+			                        <h2>魔幻·爱<br><span>MAGIC LOVE</span></h2>
+			                        <p>2018.04.08</p>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			        </ul>
+			    </div>
+			    <div class="col-md-1">
+			    	<div class="btn4"> 
+						<svg height="45" width="100" xmlns="#">
+							<rect id="btn4" height="45" width="100"></rect>
+						</svg>
+						<div id="btn4_text"> <a href="">查看更多</a> </div>
+					</div>
+			    </div>
+	        </div>
+	        <div class="row">			<!--个人写真-->
+				<h3>个人写真</h3>
+				<div class="col-md-10 col-md-offset-1">
+			        <ul class="items row">
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo9.png" alt="">
+			                    <figcaption>
+			                        <h2>天使女孩<br><span>ANGLE GIRL</span></h2>
+			                        <p>2018.04.06</p>
+			                        <a href="#" >查看更多</a>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo10.jpg" alt="">
+			                    <figcaption>
+			                        <h2>女王风<br><span>QUEEN STYLE</span></h2>
+			                        <p>2018.04.12</p>
+			                        <a href="#" >查看更多</a>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo11.jpg" alt="">
+			                    <figcaption>
+			                        <h2>甜美开心果<br><span>SWEET HEART</span></h2>
+			                        <p>2018.03.28</p>
+			                        <a href="#" >查看更多</a>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			            <li class="col-sm-6 col-md-3">
+			                <figure class="effect-jazz">
+			                    <img src="images/photo12.jpg" alt="">
+			                    <figcaption>
+			                        <h2>轻奢年华<br><span>LUXURY TIME</span></h2>
+			                        <p>2018.04.03</p>
+			                        <a href="#" >查看更多</a>
+			                    </figcaption>
+			                </figure>
+			            </li>
+			        </ul>
+			    </div>
+			    <div class="col-md-1">
+			    	<div class="btn4"> 
+						<svg height="45" width="100" xmlns="#">
+							<rect id="btn4" height="45" width="100"></rect>
+						</svg>
+						<div id="btn4_text"> <a href="">查看更多</a> </div>
+					</div>
+			    </div>
+	        </div>
+		</div>
+	<!--  photos end  -->
+
+	<!--  timeline begin  -->
+		<div class="container-fluid timeline">
+			<h2 class="text-center"><small>——</small> 米澜 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 之旅 <small>——</small></h2>
+			<h4 class="text-center">PHOTO APPRECIATION</h4>
+			<div class="row">
+				<ul class="col-md-12 course_nr">
+					<li>套餐选购<br><span>SETS SELECT</span>
+						<div class="shiji">
+							<h1>01</h1>
+							<p>套餐选购</p>
+						</div>
+					</li>
+					<li>确认档期<br><span>CONFRIM DATE</span>
+						<div class="shiji">
+							<h1>02</h1>
+							<p>确认档期</p>
+						</div>
+					</li>
+					<li>选装服务<br><span>DRESSES SELECT</span>
+						<div class="shiji">
+							<h1>03</h1>
+							<p>选装服务</p>
+						</div>
+					</li>
+					<li>拍摄服务<br><span>PHOTOGRAPH</span>
+						<div class="shiji">
+							<h1>04</h1>
+							<p>拍摄服务</p>
+						</div>
+					</li>
+					<li>选片服务<br><span>FILMS SELECT</span>
+						<div class="shiji">
+							<h1>05</h1>
+							<p>选片服务</p>
+						</div>
+					</li>
+					<li>设计服务<br><span>PHOTO DESIGN</span>
+						<div class="shiji">
+							<h1>06</h1>
+							<p>设计服务</p>
+						</div>
+					</li>
+					<li>产品领取<br><span>RECEIVE PRODUCTS</span>
+						<div class="shiji">
+							<h1>07</h1>
+							<p>产品领取</p>
+						</div>
+					</li>
+					<li>售后服务<br><span>AFTER-SALE SERVICE</span>
+						<div class="shiji">
+							<h1>08</h1>
+							<p>售后服务</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<!--  timeline end  -->
+
+	<!--  guide begin  -->
+		<div class="container-fluid guide">
+			<h2 class="text-center"><small>——</small> 婚嫁 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 指南 <small>——</small></h2>
+			<h4 class="text-center">PHOTO APPRECIATION</h4>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-md-4 pic_left"><img src="images/pic_left1.png" alt="" class="img-responsive"></div>
+						<div class="col-xs-8 col-sm-8 col-md-8 text_right">
+							<a href="">婚纱照姿势？米澜婚纱摄影告诉你怎么摆</a>
+							<p>这是一个追求个性婚纱照的时代，唯美婚纱摄影，童话婚纱照，拍摄风格多变个性，这是属于我们的青春，我们的婚纱照姿势也不能千篇一律，想要自己的特色婚纱照POSE，那就来这里学习吧！</p>
+							<div class="btn from-right pull-right">MORE</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-md-4 pic_left"><img src="images/pic_left2.png" alt="" class="img-responsive"></div>
+						<div class="col-xs-8 col-sm-8 col-md-8 text_right">
+							<a href="">拍婚纱照的八大技巧</a>
+							<p>1. 拍坐姿时请离开椅背 如果靠椅背整个人的气场会“塌”下来，请把背挺直，露出腰部曲线。2. 手臂显瘦要靠几何造型 ，不是每个人都适合“含胸撑腰”那种时尚杂志封面的效果，要想让胳膊显瘦最好的方式是利用光影，手臂摆出延伸视觉的几何弯曲...</p>
+							<div class="btn from-right pull-right">MORE</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-md-4 pic_left"><img src="images/pic_left3.png" alt="" class="img-responsive"></div>
+						<div class="col-xs-8 col-sm-8 col-md-8 text_right">
+							<a href="">新人在婚礼仪式上应该注意什么</a>
+							<p>婚礼仪式是一对新人一生当中最美好的时刻，一场好的婚礼取决与新人于婚礼服务团队的通力配合，只有注重婚礼仪式的细节才能成就梦想，拥有精彩的婚礼。以下让小编给大家介绍一下需要的注意事项...</p>
+							<div class="btn from-right pull-right">MORE</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4 col-md-4 pic_left"><img src="images/pic_left4.png" alt="" class="img-responsive"></div>
+						<div class="col-xs-8 col-sm-8 col-md-8 text_right">
+							<a href="">婚纱摄影更显瘦的婚纱款式GET√</a>
+							<p>1.一字型能修饰手臂和肩部,想要修饰手臂和肩部的美女们一定要选择一字型的婚纱，质料较硬挺，色彩较沉稳的设计。即有遮挡手臂赘肉的效果，而且可以修饰双肩的肉，此外，高腰的设计可以使腰部的赘肉有所隐藏...</p>
+							<div class="btn from-right pull-right">MORE</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--  guide end  -->
+
+	<!--  footer begin  -->
+		<div class="container-fluid footer">
+			<div class="row info">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="images/logo.png" alt="">
+					<h5>米澜婚纱摄影<br><span>MERRY WEDDING PHOTOGRAPHY</span></h5>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 weibo">
+					<img src="images/weibo.png" alt="" class="img-responsive">
+					<p>米澜官方微信<br><span>MERRY @ WEIXIN</span><br><small>微信号：merry1314</small></p>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 weixin">
+					<img src="images/weixin.png" alt="" class="img-responsive">
+					<p>米澜官方微博<br><span>MERRY @ WEIBO</span><br><small>微博名：米澜婚纱摄影</small></p>
+				</div>
+			</div>
+			<div class="row map">
+				<img src="images/map.png" alt="" class="img-responsive">
+			</div>
+			<div class="row copyright text-center">Copyright © 2018. <img src="images/pic.gif" alt=""> All Rights Reserved.
+				<br><span>Designed by Solin Studio</span>
+			</div>
+		</div>
+	<!--  footer end  -->
+
+	<!--  backtop begin  -->
+		<div class="side">
+			<ul>
+				<li><a href="#"><div class="sidebox"><img src="images/side_icon01.png">客服中心</div></a></li>
+				<li><a href="javascript:void(0);" ><div class="sidebox"><img src="images/side_icon02.png">QQ客服</div></a></li>
+				<li><a href="javascript:void(0);" ><div class="sidebox"><img src="images/side_icon03.png">新浪微博</div></a></li>
+				<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="images/side_icon04.png"></a></li>
+			</ul>
+		</div>
+	<!--  backtop end  -->
+
+		<!-- 内置js -->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    
+		<!-- banner -->
+		<script src="js/jquery.sliderTabs.min.js"></script>	
+		<!-- news -->
+		<script type="text/javascript">
+			(function(A){
+				A.fn.th_video_focus=function(E){				
+					var G={
+						actClass:"cur",
+						navContainerClass:".focus_pic_preview",
+						focusContainerClass:".focus_pic",
+						animTime:600,
+						delayTime:5000
+					};				
+					if(E){
+						A.extend(G,E)
+					}					
+					var C=G.actClass, D=G.navContainerClass, B=G.focusContainerClass, F=G.animTime, H=G.delayTime, I=null;				
+					return this.each(function(){						
+						var O=A(this), M=A(D+" li",O), P=A(B+" li",O), L=M.length, K=O.height();					
+						function N(R){
+							var V=K*R*-1;
+							var U=A(B+" li",O), W=null, T=null;
+							for(var S=0;S<=R;S++){
+								W=U.eq(S);
+								T=W.find('script[type="text/templ"]');
+								if(T.length>0){
+									W.html(T.html())
+								}
+							}
+							A(B,O).stop().animate({top:V},F,function(){
+								var Y=O.find("h3"), X=Y.height();
+								Y.height(0).html(A(B+" li").eq(R).find("img").attr("alt")).animate({height:X},600)
+							});
+							A(D+" li").eq(R).addClass(C).siblings().removeClass(C)
+						}
+						function Q(){
+							if(I){
+								clearInterval(I)
+							}
+							I=setInterval(function(){
+								var R=A(D+" li."+C).index();
+								N((R+1)%L)
+							},H)
+						}			
+						O.hover(function(){
+							if(I){
+								clearInterval(I)
+							}
+						},function(){
+							Q()
+						});					
+						var J=null;						
+						M.hover(function(){							
+							var R=A(this).index();							
+							if(I){
+								clearInterval(I)
+							}
+							J=setTimeout(function(){
+								N(R)
+							},300)
+						},function(){
+							if(J){
+								clearTimeout(J)
+							}
+							Q()
+						}).click(function(T){
+							var R=A(this).index(), S=P.eq(R).find("a");
+							if(document.uniqueID||window.opera){
+								S[0].click();
+								T.stopPropagation();
+								T.preventDefault()
+							}
+						});						
+						Q()						
+					})
+				}
+			})(jQuery);
+			$(function(){	
+				$(".film_focus").th_video_focus({
+					navContainerClass:".film_focus_nav",
+					focusContainerClass:".film_focus_imgs",
+					delayTime:3000
+				});
+			});		
+		</script>
+
+	</body>
+</html>

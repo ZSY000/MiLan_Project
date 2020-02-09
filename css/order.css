@@ -1,0 +1,66 @@
+/*----------window----------*/
+.window{margin-top: 30px;}
+.window_border{
+	border: 1px solid #eee;
+	padding: 0;
+	box-shadow: 2px 3px 5px #eee;
+}
+.window_box{
+	border: 1px solid #eee;
+	background-color: #4686C4;
+	padding-left:5px;
+	border: 1px solid #eee;
+}
+.window_box img{float: left;}
+.window_box p{
+	color: #fff;
+	padding: 10px 0;
+}
+.window_box p span{
+	font-size: 20px;
+	line-height: 32px;
+}
+.window_left>p{
+	padding: 10px;
+	color: #555;
+}
+.window_left{border-right: 1px solid #eee;}
+.window_left form{color: #666;}
+.window_left form label{font-weight: normal;}
+.submit_btn button{
+    height: 45px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-radius: 4px;
+    background: #6CAAE3;
+    border: 0;
+    font-size: 16px;
+}
+.submit_btn button:hover{background: #5D98D1;}
+.window_right{color: #555;}
+.window_right .slogan{border-bottom: 1px solid #ccc;}
+.window_right h2{
+	margin-top: 0;
+	border-top: 1px solid #ccc;
+}
+.window_right img{margin-top: 10px;}
+
+/*----------pay----------*/
+.pay{padding: 40px 0;}
+.pay h3{
+	margin-bottom: 30px;
+	border-bottom: 1px solid #eee;
+	line-height: 40px;
+	color: #444;
+}
+.pay h3 span:first-child{font-size: 20px;}
+.pay h3 span:last-child{
+	font-size: 14px;
+	color: #666;
+}
+.pay .row{
+	margin-top: 10px;
+	padding-left: 6%;
+}
+.pay .row img{transition: all 0.3s;}
+.pay .row img:hover{transform: scale(1.1);}

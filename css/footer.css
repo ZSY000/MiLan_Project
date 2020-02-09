@@ -1,0 +1,88 @@
+/*----------footer----------*/
+.footer{
+	padding: 20px 0 0 0;
+	background-color: #333;
+}
+.footer .map img{width: 100%;}
+.footer .info{padding-bottom: 20px;}
+.footer .info h5{
+	color: #eee;
+	font-size: 28px;
+}
+.footer .info h5 span{font-size: 12px;}
+.footer .info .weibo,.footer .info .weixin{
+	border-left: 1px solid #444;
+	padding:0 4%;
+}
+.footer .copyright{
+	color: #444;
+	background-color: #101010;
+	line-height: 20px;
+	padding-top: 5px;
+}
+.footer .info img{
+	float: left;
+	margin: 0 20px;
+}
+.footer .info p{
+	float: left;
+	color: #eee;
+	margin-left: 10px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.footer .info p span{
+	font-size: 16px;
+	color: #666;
+}
+.footer .info p small{
+	font-size: 16px;
+	color: #bbb;
+}
+
+/*----------backtop----------*/
+.side{
+	position:fixed;
+	width:54px;
+	height:275px;
+	right:15px;
+	top:340px;
+	z-index:100;
+}
+.side ul li{
+	width:54px;
+	height:54px;
+	float:left;
+	position:relative;
+	border-bottom:1px solid #444;
+}
+.side ul li .sidebox{
+	position:absolute;
+	width:54px;
+	height:54px;
+	top:0;
+	right:0;
+	transition:all 0.3s;
+	background:#000;
+	opacity:0.8;
+	filter:Alpha(opacity=80);
+	color:#fff;
+	font:14px/54px "微软雅黑";
+	overflow:hidden;
+}
+.side ul li .sidetop{
+	width:54px;
+	height:54px;
+	line-height:54px;
+	display:inline-block;
+	background:#000;
+	opacity:0.8;
+	filter:Alpha(opacity=80);
+	transition:all 0.3s;
+}
+.side ul li .sidetop:hover{
+	background:#C93431;
+	opacity:1;
+	filter:Alpha(opacity=100);
+}
+.side ul li img{float:left;}

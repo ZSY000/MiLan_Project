@@ -1,0 +1,212 @@
+/*----------connect----------*/
+.connect .con1{
+	background-color: #162232;
+	color: #fff;
+	font-size: 30px;
+	line-height: 50px;
+	padding: 15px 0;
+}
+.connect .con1 p span{
+	font-size: 50px;
+	color: #fff;
+}
+.connect .con2{
+	background-color: #666;
+	padding: 10px 0 7px 25px;
+}
+.connect .con2 p{
+	color: #fff;
+	float: left;
+}
+.connect .con2 .qq,.connect .con2 .weixin,.connect .con2 .share{
+	padding-left: 8%;
+	border-right: 1px solid #888;
+}
+.connect .con2 .qq p{
+	color: #fff;
+	float: left;
+	line-height: 24px;
+	width: 60%;
+}
+.connect .con2 .qq p a{
+	display: block;
+	color: #fff;
+	float: left;
+	margin-right: 10px;
+}
+.connect .con2 .qq p a:hover{color: #162232;}
+.connect .con2 .qq p a span{margin-right: 3px;}
+.connect .con2 img{
+	float: left;
+	margin-right: 7px;
+}
+.connect .con2 .weixin p{
+	line-height: 29px;
+	font-size: 16px;
+	text-align: left;
+}
+.connect .con2 .share{border:none;}
+.connect .con2 .share span{
+	color: #fff;
+	font-size: 48px;
+	float: left;
+	margin-right: 9px;
+}
+.connect .con2 .share img{margin-top:7px;}
+
+/*----------address----------*/
+.address{padding: 40px 0 20px;}
+.address h2{color: #444;}
+.address h2 small{
+	font-size: 16px;
+	color: #EFBD9A;
+	position: relative;
+	top: -6px;
+}
+.address h4{
+	color: #bbb;
+	font-size: 14px;
+	line-height: 32px;
+}
+.address .head{margin-bottom: 20px;}
+.address .head p{
+	color: #666;
+	padding-left: 20px;
+	background: url(../images/title_img4.png) no-repeat left center;
+}
+.address .head p span{
+	color: #555;
+	font-weight: bold;
+}
+.address .branch a{
+	display: block;
+	width: 80%;
+	color: #555;
+	border:1px solid #eee;
+	padding: 20px 0;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	transition: all 0.3s;
+}
+.address .branch a p{
+	font-size: 18px;
+	line-height: 32px;
+}
+.address .branch a span{
+	font-size: 30px;
+	color: #f66;
+}
+.address .branch a:hover{border: 1px solid #f66;}
+
+/*----------job----------*/
+.job .job_title{
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0;
+	margin-top: 40px;
+	font-size: 24px;
+}
+.job .job_title>h2{color: #444;}
+.job .job_title>h2 span{
+	font-size: 18px;
+	color: #EFBD9A;
+}
+.job .job_title>h2 small{
+	font-size: 16px;
+	color: #EFBD9A;
+	position: relative;
+	top: -6px;
+}
+.job .job_title>h4{
+	color: #bbb;
+	font-size: 14px;
+	line-height: 32px;
+} 
+.job .job_content p{
+	font-size: 16px;
+	color: #666;
+	line-height: 30px;
+	padding: 20px 0;
+}
+.job .job_classify{padding: 20px 0;}
+.job .job_classify h4{
+	border-bottom: 1px solid #eee;
+	line-height:45px;
+	padding-left: 18px;
+	color: #E8BF08;
+	background: url(../images/arrow1.png) no-repeat left center;
+}
+.job .job_classify p{color: #555;}
+.btn1 {				/*按钮*/
+  padding: 0px 25px;
+  border: none;
+  background: transparent;
+  color: #333;
+  width:auto;
+  float:right;
+  position:relative;
+  line-height:45px;
+  cursor:pointer;
+}
+.btn1 span {
+  position: absolute;
+  background-color: #f8c013;
+  display: block;
+  transition: all 200ms;
+}
+.btn1 .line1,
+.btn1 .line3 {
+  height: 2px;
+  width: 20px;
+}
+.btn1 .line2,
+.btn1 .line4 {
+  height: 20px;
+  width: 2px;
+}
+.btn1 .line1,
+.btn1 .line2 {
+  top: 0;
+  right: 0;
+}
+.btn1 .line3,
+.btn1 .line4 {
+  bottom: 0;
+  left: 0;
+}
+.btn1 .reverse .line1,
+.btn1 .reverse .line3 {
+  width: 100%;
+}
+.btn1 .reverse .line2,
+.btn1 .reverse .line4 {
+  height: 100%;
+}
+.btn1:hover,
+.btn1:active {
+  background-color: transparent;
+  color: #333;
+}
+.btn1:hover .line1,
+.btn1:active .line1,
+.btn1:hover .line3,
+.btn1:active .line3 {
+  width: 100%;
+}
+.btn1:hover .line2,
+.btn1:active .line2,
+.btn1:hover .line4,
+.btn1:active .line4 {
+  height: 100%;
+}
+.btn1:hover.reverse .line1,
+.btn1:active.reverse .line1,
+.btn1:hover.reverse .line3,
+.btn1:active.reverse .line3 {
+  width: 20px;
+}
+.btn1:hover.reverse .line2,
+.btn1:active.reverse .line2,
+.btn1:hover.reverse .line4,
+.btn1:active.reverse .line4 {
+  height: 20px;
+}
